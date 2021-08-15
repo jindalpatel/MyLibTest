@@ -27,6 +27,11 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
-  s.vendored_framework = "SplunkMint.xcframework"
+  s.vendored_frameworks = "SplunkMint.xcframework"
+  s.frameworks = [
+    "SystemConfiguration",
+    "CoreTelephony"
+  ]
+  s.libraries = "z"
   s.source_files = 'MyLibTest/Classes/**/*'
 end
