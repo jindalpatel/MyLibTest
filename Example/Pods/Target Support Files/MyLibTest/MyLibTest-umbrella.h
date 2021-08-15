@@ -10,6 +10,5 @@
 #endif
 #endif
 
-
 FOUNDATION_EXPORT double MyLibTestVersionNumber;
 FOUNDATION_EXPORT const unsigned char MyLibTestVersionString[];
