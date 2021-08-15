@@ -23,6 +23,7 @@
 		682185BC26C91B96006D86BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682185BB26C91B96006D86BA /* SystemConfiguration.framework */; };
 		682185BE26C91B9B006D86BA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682185BD26C91B9B006D86BA /* CoreTelephony.framework */; };
 		682185C526C922A1006D86BA /* MyLibTest.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65C62D927441396DAA67016B7899C3C4 /* MyLibTest.modulemap */; platformFilter = ios; };
+		682185C626C922D2006D86BA /* MyLibTest.modulemap in Resources */ = {isa = PBXBuildFile; fileRef = 65C62D927441396DAA67016B7899C3C4 /* MyLibTest.modulemap */; platformFilter = ios; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
@@ -71,13 +72,13 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		682185C426C9229C006D86BA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
 				682185C526C922A1006D86BA /* MyLibTest.modulemap in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -539,6 +540,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				682185C626C922D2006D86BA /* MyLibTest.modulemap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
