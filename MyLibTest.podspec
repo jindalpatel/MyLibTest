@@ -33,5 +33,6 @@ Pod::Spec.new do |s|
     "CoreTelephony"
   ]
   s.libraries = "z"
+  s.module_map = "MyLibTest.modulemap"
   s.source_files = 'MyLibTest/Classes/**/*'
 end
