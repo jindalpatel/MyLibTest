@@ -22,8 +22,6 @@
 		682185B726C91735006D86BA /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682185B626C91735006D86BA /* SplunkMint.xcframework */; };
 		682185BC26C91B96006D86BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682185BB26C91B96006D86BA /* SystemConfiguration.framework */; };
 		682185BE26C91B9B006D86BA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682185BD26C91B9B006D86BA /* CoreTelephony.framework */; };
-		682185C526C922A1006D86BA /* MyLibTest.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65C62D927441396DAA67016B7899C3C4 /* MyLibTest.modulemap */; platformFilter = ios; };
-		682185C626C922D2006D86BA /* MyLibTest.modulemap in Resources */ = {isa = PBXBuildFile; fileRef = 65C62D927441396DAA67016B7899C3C4 /* MyLibTest.modulemap */; platformFilter = ios; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
@@ -69,19 +67,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		682185C426C9229C006D86BA /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = "";
-			dstSubfolderSpec = 7;
-			files = (
-				682185C526C922A1006D86BA /* MyLibTest.modulemap in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		034F3F73AAA8C55B6D793D141661BA92 /* Pods-MyLibTest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyLibTest_Example-dummy.m"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
@@ -110,7 +95,7 @@
 		58AB431058AD25873469E1F32F7674A2 /* Pods_MyLibTest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLibTest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		65C62D927441396DAA67016B7899C3C4 /* MyLibTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MyLibTest.modulemap; sourceTree = "<group>"; };
+		65C62D927441396DAA67016B7899C3C4 /* MyLibTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MyLibTest.modulemap; sourceTree = "<group>"; };
 		682185B626C91735006D86BA /* SplunkMint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SplunkMint.xcframework; sourceTree = "<group>"; };
 		682185BB26C91B96006D86BA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		682185BD26C91B9B006D86BA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -278,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				682185B626C91735006D86BA /* SplunkMint.xcframework */,
+				65C62D927441396DAA67016B7899C3C4 /* MyLibTest.modulemap */,
 				4681F4F84EBB894363A15E2CB494288C /* ReplaceMe.swift */,
 				801007A06D3ACE88E129ECB9313670A2 /* Pod */,
 				B93903642ABE1ED8A7E8BF2FD98B9A95 /* Support Files */,
@@ -304,7 +290,6 @@
 		B93903642ABE1ED8A7E8BF2FD98B9A95 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				65C62D927441396DAA67016B7899C3C4 /* MyLibTest.modulemap */,
 				973828AA44F45E71EDDCD1B6E50E2D91 /* MyLibTest-dummy.m */,
 				26A42989C5AE204E82526B744C57DF9C /* MyLibTest-Info.plist */,
 				B63562539960F7C4B2E933637FA7B04A /* MyLibTest-prefix.pch */,
@@ -437,7 +422,6 @@
 				C12336CCA21C5DBC8109D568424A4FE0 /* Sources */,
 				F5CABB8A471FB38D276E419765D1B3D1 /* Frameworks */,
 				16213214D70CE476FAFC15CACD2C82BB /* Resources */,
-				682185C426C9229C006D86BA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -540,7 +524,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682185C626C922D2006D86BA /* MyLibTest.modulemap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,8 +709,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INCLUDE_PATHS = "";
-				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = "/Users/jindalp/Desktop/LibTest/MyLibTest/SplunkMint.xcframework/ios-arm64_i386_x86_64-simulator/Headers/SplunkMint.h";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -943,7 +924,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
