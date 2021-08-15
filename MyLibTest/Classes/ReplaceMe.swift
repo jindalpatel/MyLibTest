@@ -1,5 +1,5 @@
 
-import SplunkMint
+//import SplunkMint
 
 
 class MyLibTest: NSObject {
