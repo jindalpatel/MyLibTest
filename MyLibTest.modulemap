@@ -1,5 +1,5 @@
 framework module MyLibTest {
-  umbrella header "MyLibTest-umbrella.h"
+ // umbrella header "MyLibTest-umbrella.h"
   
   module SplunkMint {
       umbrella header "/Users/jindalp/Desktop/LibTest/MyLibTest/SplunkMint.xcframework/ios-arm64_i386_x86_64-simulator/Headers/SplunkMint.h"
