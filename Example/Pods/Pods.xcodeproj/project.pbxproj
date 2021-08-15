@@ -703,7 +703,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/MyLibTest/MyLibTest.modulemap";
+				MODULEMAP_FILE = /Users/jindalp/Desktop/LibTest/MyLibTest/MyLibTest.modulemap;
 				PRODUCT_MODULE_NAME = MyLibTest;
 				PRODUCT_NAME = MyLibTest;
 				SDKROOT = iphoneos;
@@ -918,7 +918,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/MyLibTest/MyLibTest.modulemap";
+				MODULEMAP_FILE = /Users/jindalp/Desktop/LibTest/MyLibTest/MyLibTest.modulemap;
 				PRODUCT_MODULE_NAME = MyLibTest;
 				PRODUCT_NAME = MyLibTest;
 				SDKROOT = iphoneos;
