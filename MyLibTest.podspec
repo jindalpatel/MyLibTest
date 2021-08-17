@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.libraries = "z"
   s.source_files = 'MyLibTest/Classes/**/*'
 #  s.static_framework = true
-  s.pod_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates' }
+  #s.pod_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates' }
   #s.user_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates' }
 
 end

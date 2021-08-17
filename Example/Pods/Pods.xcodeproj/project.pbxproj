@@ -21,7 +21,7 @@
 		539B9747EB5BC5CD463EA91A96B4E809 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681F4F84EBB894363A15E2CB494288C /* ReplaceMe.swift */; };
 		682185BC26C91B96006D86BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682185BB26C91B96006D86BA /* SystemConfiguration.framework */; };
 		682185BE26C91B9B006D86BA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682185BD26C91B9B006D86BA /* CoreTelephony.framework */; };
-		68C05CEF26CBE67B00E46188 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C05CEE26CBE67B00E46188 /* SplunkMint.xcframework */; };
+		68C05CF126CBEA0200E46188 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C05CF026CBEA0200E46188 /* SplunkMint.xcframework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
@@ -98,7 +98,7 @@
 		65C62D927441396DAA67016B7899C3C4 /* MyLibTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MyLibTest.modulemap; sourceTree = "<group>"; };
 		682185BB26C91B96006D86BA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		682185BD26C91B9B006D86BA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		68C05CEE26CBE67B00E46188 /* SplunkMint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SplunkMint.xcframework; sourceTree = "<group>"; };
+		68C05CF026CBEA0200E46188 /* SplunkMint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SplunkMint.xcframework; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		6F2B59D85AB8E87C312953E1AD52F5CE /* Pods-MyLibTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyLibTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7892BBADE7382148D3B9B59D49C2071B /* Pods-MyLibTest_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyLibTest_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 			files = (
 				682185BE26C91B9B006D86BA /* CoreTelephony.framework in Frameworks */,
 				682185BC26C91B96006D86BA /* SystemConfiguration.framework in Frameworks */,
-				68C05CEF26CBE67B00E46188 /* SplunkMint.xcframework in Frameworks */,
+				68C05CF126CBEA0200E46188 /* SplunkMint.xcframework in Frameworks */,
 				04AF283755F6DC304CA8CD893910A9EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +262,7 @@
 		99CF0DA39CC5C5409326405D074620BB /* MyLibTest */ = {
 			isa = PBXGroup;
 			children = (
-				68C05CEE26CBE67B00E46188 /* SplunkMint.xcframework */,
+				68C05CF026CBEA0200E46188 /* SplunkMint.xcframework */,
 				4681F4F84EBB894363A15E2CB494288C /* ReplaceMe.swift */,
 				801007A06D3ACE88E129ECB9313670A2 /* Pod */,
 				B93903642ABE1ED8A7E8BF2FD98B9A95 /* Support Files */,
