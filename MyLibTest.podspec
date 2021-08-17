@@ -20,11 +20,9 @@ Pod::Spec.new do |s|
   s.description      = "NewTest desctuo hyutv"
 
   s.homepage         = 'https://github.com/jindalpatel/MyLibTest'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jindalpatel' => 'jindalpatel@crestdatasys.com' }
   s.source           = { :git => 'https://github.com/jindalpatel/MyLibTest.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
   s.vendored_frameworks = "SplunkMint.xcframework"
@@ -33,6 +31,9 @@ Pod::Spec.new do |s|
     "CoreTelephony"
   ]
   s.libraries = "z"
-  s.module_map = "MyLibTest.modulemap"
   s.source_files = 'MyLibTest/Classes/**/*'
+#  s.static_framework = true
+  s.pod_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates' }
+  #s.user_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates' }
+
 end
