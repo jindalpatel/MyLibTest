@@ -22,6 +22,9 @@
 		682185BC26C91B96006D86BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682185BB26C91B96006D86BA /* SystemConfiguration.framework */; };
 		682185BE26C91B9B006D86BA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682185BD26C91B9B006D86BA /* CoreTelephony.framework */; };
 		68AB645126CD086E00375737 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AB645026CD086E00375737 /* SplunkMint.xcframework */; };
+		68DED0D226CD3C8800EB9812 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DED0D126CD3C8800EB9812 /* WebKit.framework */; };
+		68DED0D426CD3C8D00EB9812 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DED0D326CD3C8D00EB9812 /* CoreLocation.framework */; };
+		68DED0D626CD3C9300EB9812 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DED0D526CD3C9300EB9812 /* libz.tbd */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
@@ -99,6 +102,9 @@
 		682185BB26C91B96006D86BA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		682185BD26C91B9B006D86BA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		68AB645026CD086E00375737 /* SplunkMint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SplunkMint.xcframework; sourceTree = "<group>"; };
+		68DED0D126CD3C8800EB9812 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/iOSSupport/System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		68DED0D326CD3C8D00EB9812 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		68DED0D526CD3C9300EB9812 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		6F2B59D85AB8E87C312953E1AD52F5CE /* Pods-MyLibTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyLibTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7892BBADE7382148D3B9B59D49C2071B /* Pods-MyLibTest_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyLibTest_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -165,6 +171,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DED0D626CD3C9300EB9812 /* libz.tbd in Frameworks */,
+				68DED0D426CD3C8D00EB9812 /* CoreLocation.framework in Frameworks */,
+				68DED0D226CD3C8800EB9812 /* WebKit.framework in Frameworks */,
 				682185BE26C91B9B006D86BA /* CoreTelephony.framework in Frameworks */,
 				682185BC26C91B96006D86BA /* SystemConfiguration.framework in Frameworks */,
 				68AB645126CD086E00375737 /* SplunkMint.xcframework in Frameworks */,
@@ -304,6 +313,9 @@
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				68DED0D526CD3C9300EB9812 /* libz.tbd */,
+				68DED0D326CD3C8D00EB9812 /* CoreLocation.framework */,
+				68DED0D126CD3C8800EB9812 /* WebKit.framework */,
 				682185BD26C91B9B006D86BA /* CoreTelephony.framework */,
 				682185BB26C91B96006D86BA /* SystemConfiguration.framework */,
 				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
@@ -694,6 +706,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "Target Support Files/MyLibTest/MyLibTest-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MyLibTest/MyLibTest-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -704,6 +720,10 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_MODULE_NAME = MyLibTest;
 				PRODUCT_NAME = MyLibTest;
 				SDKROOT = iphoneos;
@@ -909,6 +929,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "Target Support Files/MyLibTest/MyLibTest-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MyLibTest/MyLibTest-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -919,6 +943,10 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_MODULE_NAME = MyLibTest;
 				PRODUCT_NAME = MyLibTest;
 				SDKROOT = iphoneos;
