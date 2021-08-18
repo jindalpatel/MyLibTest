@@ -262,6 +262,7 @@
 		99CF0DA39CC5C5409326405D074620BB /* MyLibTest */ = {
 			isa = PBXGroup;
 			children = (
+				68AB645026CD086E00375737 /* SplunkMint.xcframework */,
 				4681F4F84EBB894363A15E2CB494288C /* ReplaceMe.swift */,
 				801007A06D3ACE88E129ECB9313670A2 /* Pod */,
 				B93903642ABE1ED8A7E8BF2FD98B9A95 /* Support Files */,
@@ -303,7 +304,6 @@
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				68AB645026CD086E00375737 /* SplunkMint.xcframework */,
 				682185BD26C91B9B006D86BA /* CoreTelephony.framework */,
 				682185BB26C91B96006D86BA /* SystemConfiguration.framework */,
 				FB2668559AE577E6E8078C0C291AD417 /* iOS */,

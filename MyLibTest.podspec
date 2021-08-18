@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/jindalpatel/MyLibTest'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jindalpatel' => 'jindalpatel@crestdatasys.com' }
-  s.source           = { :git => 'https://github.com/jindalpatel/MyLibTest.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jindalpatel/MyLibTest.git', :branch => "main" }
 
   s.ios.deployment_target = '12.0'
   s.vendored_frameworks = "SplunkMint.xcframework"
